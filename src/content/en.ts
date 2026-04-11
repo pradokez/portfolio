@@ -1,5 +1,5 @@
 export interface SiteContent {
-  hero: {
+  profile: {
     name: string
     bio: string
   }
@@ -9,7 +9,7 @@ export interface SiteContent {
 }
 
 const content: SiteContent = {
-  hero: {
+  profile: {
     name: 'Keziah Prado',
     bio: 'Front-end specialist with backend skills, crafting digital experiences from Brazil 🇧🇷 with a passion for game development.',
   },

@@ -1,9 +1,9 @@
-import HeroSection from './components/HeroSection'
+import ProfileSection from './components/ProfileSection'
 
 export default function App() {
   return (
     <main className="min-h-screen bg-surface text-on-surface">
-      <HeroSection />
+      <ProfileSection />
     </main>
   )
 }
