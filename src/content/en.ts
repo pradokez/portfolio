@@ -6,6 +6,10 @@ export interface SiteContent {
   nav: {
     links: string[]
   }
+  techStack: {
+    heading: string
+    subheading: string
+  }
 }
 
 const content: SiteContent = {
@@ -15,6 +19,10 @@ const content: SiteContent = {
   },
   nav: {
     links: [],
+  },
+  techStack: {
+    heading: 'Tech Stack & Abilities',
+    subheading: 'My current skill tree and proficiency levels',
   },
 }
 
