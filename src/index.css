@@ -4,6 +4,9 @@
   --color-primary: #f9c31f;
   --color-surface: #fbfbfb;
   --color-on-surface: #020817;
+  --color-category-frontend: #38bdf8;
+  --color-category-backend: #4ade80;
+  --color-category-tools: #a78bfa;
 }
 
 :root {
