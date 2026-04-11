@@ -1,9 +1,9 @@
-import content from './content/en'
+import ProfileSection from './components/ProfileSection'
 
 export default function App() {
-  void content
-
   return (
-    <div className="min-h-screen bg-surface text-on-surface" />
+    <main className="min-h-screen bg-surface text-on-surface">
+      <ProfileSection />
+    </main>
   )
 }

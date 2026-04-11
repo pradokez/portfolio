@@ -1,7 +1,7 @@
 export interface SiteContent {
-  hero: {
-    title: string
-    subtitle: string
+  profile: {
+    name: string
+    bio: string
   }
   nav: {
     links: string[]
@@ -9,9 +9,9 @@ export interface SiteContent {
 }
 
 const content: SiteContent = {
-  hero: {
-    title: '',
-    subtitle: '',
+  profile: {
+    name: 'Keziah Prado',
+    bio: 'Front-end specialist with backend skills, crafting digital experiences from Brazil 🇧🇷 with a passion for game development.',
   },
   nav: {
     links: [],
