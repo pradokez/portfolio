@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #f9c31f;
+  --color-surface: #fbfbfb;
+  --color-on-surface: #020817;
+}
+
+:root {
+  --primary: #f9c31f;
+  --surface: #fbfbfb;
+  --on-surface: #020817;
+}
+
+html {
+  scroll-behavior: smooth;
+}
