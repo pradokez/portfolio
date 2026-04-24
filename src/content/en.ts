@@ -39,7 +39,7 @@ const content: SiteContent = {
     name: 'Keziah Prado',
     bio: 'Front-end specialist with backend skills, crafting digital experiences from Brazil 🇧🇷 with a passion for game development.',
     location: 'Recife, Brazil',
-    field: 'Game Development',
+    field: 'Web development',
     birthDate: '1998-04-09',
   },
   nav: {
