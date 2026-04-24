@@ -1,4 +1,5 @@
-import { SiGithub, SiLinkedin } from 'react-icons/si'
+import { SiGithub } from 'react-icons/si'
+import { FaLinkedin } from 'react-icons/fa6'
 import content from '../content/en'
 
 function openLink(url: string) {
@@ -27,7 +28,7 @@ export default function ContactSection() {
           onClick={() => openLink(linkedin.url)}
           className="flex items-center gap-2 text-on-surface hover:text-on-surface/70 transition-colors"
         >
-          <SiLinkedin size={24} />
+          <FaLinkedin size={24} />
           <span>{linkedin.label}</span>
         </button>
       </div>
