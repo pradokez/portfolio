@@ -1,21 +1,31 @@
-import { render, screen } from '@testing-library/react'
-import { describe, it, expect } from 'vitest'
+import { render, screen, fireEvent } from '@testing-library/react'
+import { describe, it, expect, vi, beforeEach } from 'vitest'
 import ContactSection from './ContactSection'
 
 describe('ContactSection', () => {
-  it('renders GitHub link with correct href, target, and rel', () => {
-    render(<ContactSection />)
-    const link = screen.getByRole('link', { name: /github/i })
-    expect(link).toHaveAttribute('href', 'https://github.com/pradokez')
-    expect(link).toHaveAttribute('target', '_blank')
-    expect(link).toHaveAttribute('rel', 'noopener noreferrer')
+  beforeEach(() => {
+    vi.stubGlobal('open', vi.fn())
   })
 
-  it('renders LinkedIn link with correct href, target, and rel', () => {
+  it('renders GitHub button and opens correct URL on click', () => {
     render(<ContactSection />)
-    const link = screen.getByRole('link', { name: /linkedin/i })
-    expect(link).toHaveAttribute('href', 'https://www.linkedin.com/in/keziahprado/')
-    expect(link).toHaveAttribute('target', '_blank')
-    expect(link).toHaveAttribute('rel', 'noopener noreferrer')
+    const button = screen.getByRole('button', { name: /github/i })
+    fireEvent.click(button)
+    expect(window.open).toHaveBeenCalledWith(
+      'https://github.com/pradokez',
+      '_blank',
+      'noopener,noreferrer',
+    )
+  })
+
+  it('renders LinkedIn button and opens correct URL on click', () => {
+    render(<ContactSection />)
+    const button = screen.getByRole('button', { name: /linkedin/i })
+    fireEvent.click(button)
+    expect(window.open).toHaveBeenCalledWith(
+      'https://www.linkedin.com/in/keziahprado/',
+      '_blank',
+      'noopener,noreferrer',
+    )
   })
 })

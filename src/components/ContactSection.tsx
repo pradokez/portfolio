@@ -1,6 +1,10 @@
 import { SiGithub, SiLinkedin } from 'react-icons/si'
 import content from '../content/en'
 
+function openLink(url: string) {
+  window.open(url, '_blank', 'noopener,noreferrer')
+}
+
 export default function ContactSection() {
   const { heading, subheading, github, linkedin } = content.contact
 
@@ -12,24 +16,20 @@ export default function ContactSection() {
       </div>
 
       <div className="flex justify-center gap-8">
-        <a
-          href={github.url}
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          onClick={() => openLink(github.url)}
           className="flex items-center gap-2 text-on-surface hover:text-on-surface/70 transition-colors"
         >
           <SiGithub size={24} />
           <span>{github.label}</span>
-        </a>
-        <a
-          href={linkedin.url}
-          target="_blank"
-          rel="noopener noreferrer"
+        </button>
+        <button
+          onClick={() => openLink(linkedin.url)}
           className="flex items-center gap-2 text-on-surface hover:text-on-surface/70 transition-colors"
         >
           <SiLinkedin size={24} />
           <span>{linkedin.label}</span>
-        </a>
+        </button>
       </div>
     </section>
   )
