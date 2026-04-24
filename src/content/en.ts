@@ -2,6 +2,9 @@ export interface SiteContent {
   profile: {
     name: string
     bio: string
+    location: string
+    field: string
+    birthDate: string
   }
   nav: {
     links: string[]
@@ -27,6 +30,7 @@ export interface SiteContent {
     subheading: string
     github: { label: string; url: string }
     linkedin: { label: string; url: string }
+    email: { label: string; url: string }
   }
 }
 
@@ -34,6 +38,9 @@ const content: SiteContent = {
   profile: {
     name: 'Keziah Prado',
     bio: 'Front-end specialist with backend skills, crafting digital experiences from Brazil 🇧🇷 with a passion for game development.',
+    location: 'Recife, Brazil',
+    field: 'Game Development',
+    birthDate: '1998-04-09',
   },
   nav: {
     links: [],
@@ -60,10 +67,11 @@ const content: SiteContent = {
     ],
   },
   contact: {
-    heading: 'Contact',
-    subheading: "Let's connect",
+    heading: 'Ready to Party Up?',
+    subheading: "Let's collaborate and build something amazing together",
     github: { label: 'GitHub', url: 'https://github.com/pradokez' },
     linkedin: { label: 'LinkedIn', url: 'https://www.linkedin.com/in/keziahprado/' },
+    email: { label: 'Send Message', url: 'mailto:pradokeziah@gmail.com' },
   },
 }
 
