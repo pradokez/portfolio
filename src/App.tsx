@@ -1,6 +1,8 @@
 import ProfileSection from './components/ProfileSection'
 import TechStackSection from './components/TechStackSection'
 import QuestLogSection from './components/QuestLogSection'
+import CareerSection from './components/CareerSection'
+import ContactSection from './components/ContactSection'
 
 export default function App() {
   return (
@@ -8,6 +10,8 @@ export default function App() {
       <ProfileSection />
       <TechStackSection />
       <QuestLogSection />
+      <CareerSection />
+      <ContactSection />
     </main>
   )
 }
