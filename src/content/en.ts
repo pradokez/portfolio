@@ -10,6 +10,10 @@ export interface SiteContent {
     heading: string
     subheading: string
   }
+  questLog: {
+    heading: string
+    subheading: string
+  }
 }
 
 const content: SiteContent = {
@@ -23,6 +27,10 @@ const content: SiteContent = {
   techStack: {
     heading: 'Tech Stack & Abilities',
     subheading: 'My current skill tree and proficiency levels',
+  },
+  questLog: {
+    heading: 'Quest Log',
+    subheading: 'Projects I\'ve worked on',
   },
 }
 
