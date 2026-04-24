@@ -6,12 +6,18 @@ import ContactSection from './components/ContactSection'
 
 export default function App() {
   return (
-    <main className="min-h-screen bg-surface text-on-surface">
-      <ProfileSection />
-      <TechStackSection />
-      <QuestLogSection />
-      <CareerSection />
-      <ContactSection />
-    </main>
+    <div className="min-h-screen bg-surface text-on-surface">
+      <header>
+        <ProfileSection />
+      </header>
+      <main>
+        <TechStackSection />
+        <QuestLogSection />
+        <CareerSection />
+      </main>
+      <footer id="contact">
+        <ContactSection />
+      </footer>
+    </div>
   )
 }
