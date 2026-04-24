@@ -19,14 +19,14 @@ export default function ContactSection() {
       <div className="flex justify-center gap-4">
         <button
           onClick={() => openLink(github.url)}
-          className="flex items-center gap-2 px-6 py-3 rounded-full border border-on-surface/30 text-on-surface hover:border-primary hover:text-primary transition-colors"
+          className="flex items-center gap-2 px-6 py-3 rounded-full border border-on-surface/30 text-on-surface hover:bg-primary hover:border-primary transition-colors"
         >
           <SiGithub size={20} />
           <span>{github.label}</span>
         </button>
         <button
           onClick={() => openLink(linkedin.url)}
-          className="flex items-center gap-2 px-6 py-3 rounded-full border border-on-surface/30 text-on-surface hover:border-primary hover:text-primary transition-colors"
+          className="flex items-center gap-2 px-6 py-3 rounded-full border border-on-surface/30 text-on-surface hover:bg-primary hover:border-primary transition-colors"
         >
           <FaLinkedin size={20} />
           <span>{linkedin.label}</span>
