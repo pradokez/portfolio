@@ -16,19 +16,19 @@ export default function ContactSection() {
         <p className="text-sm md:text-base text-on-surface/50">{subheading}</p>
       </div>
 
-      <div className="flex justify-center gap-8">
+      <div className="flex justify-center gap-4">
         <button
           onClick={() => openLink(github.url)}
-          className="flex items-center gap-2 text-on-surface hover:text-on-surface/70 transition-colors"
+          className="flex items-center gap-2 px-6 py-3 rounded-full border border-on-surface/30 text-on-surface hover:bg-on-surface/10 transition-colors"
         >
-          <SiGithub size={24} />
+          <SiGithub size={20} />
           <span>{github.label}</span>
         </button>
         <button
           onClick={() => openLink(linkedin.url)}
-          className="flex items-center gap-2 text-on-surface hover:text-on-surface/70 transition-colors"
+          className="flex items-center gap-2 px-6 py-3 rounded-full border border-on-surface/30 text-on-surface hover:bg-on-surface/10 transition-colors"
         >
-          <FaLinkedin size={24} />
+          <FaLinkedin size={20} />
           <span>{linkedin.label}</span>
         </button>
       </div>
